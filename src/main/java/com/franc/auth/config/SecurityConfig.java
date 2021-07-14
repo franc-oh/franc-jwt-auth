@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConrig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * 패스워드-인코더 구현 + 빈으로 등록
@@ -34,5 +34,6 @@ public class SecurityConrig extends WebSecurityConfigurerAdapter {
             .formLogin()
                 .and()
             .httpBasic();
+
     }
 }
